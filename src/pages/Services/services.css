@@ -1,0 +1,18 @@
+.services .serviceBox {
+    border-radius: 5px;
+    color: #111;
+    cursor: pointer;
+    transition: .3s linear;
+    .icon{
+        background-color:#020202;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+.services .serviceBox:hover {
+    transform: scale(1.14);
+    border-radius: 0 5px;
+}

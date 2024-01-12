@@ -1,0 +1,19 @@
+.limited {
+    background-color: #091a37;
+    color: #fff;
+}
+
+.limited .box .left .time span {
+    position: absolute;
+    content: "";
+}
+
+.limited .box .left .btn {
+    color: #111;
+    background-color: #fff !important;
+    border-radius: 4px;
+}
+
+.limited .image img{
+    height: 17rem;
+}
