@@ -4,11 +4,12 @@
 
 .Prodcutcard .card-img-top {
     cursor: pointer;
+    transform: scale(.8);
     transition: .3s linear;
 }
 
 .Prodcutcard .card-img-top:hover {
-    transform: scale(.9);
+    transform: scale(1);
 }
 
 .Prodcutcard .card-title {

@@ -1,6 +1,7 @@
 import BestSales from '../Best Sales/BestSales';
 import Helmet from '../Helmet/Helmet';
 import Limited from '../Limited Offer/Limited';
+import Popular from '../Popular/Popular';
 import Services from '../Services/Services';
 import Trending from '../Trending/Trending';
 import Arrivals from '../new Arrivals/Arrivals';
@@ -26,6 +27,9 @@ const Main = () => {
 
             {/* new arrivals */}
             <Arrivals />
+
+            {/* popular in category  */}
+            <Popular />
         </Helmet>
     )
 }

@@ -5,7 +5,7 @@ import { LuPlus } from "react-icons/lu";
 const ProductCard = ({ imgUrl, alt, height, productName, category, price }) => {
     return (
         <div className="Prodcutcard">
-            <img src={imgUrl} class="card-img-top" alt={alt} style={{ height: height }} />
+            <img src={imgUrl} class="card-img-top mb-3" alt={alt} style={{ height: height }} />
             <div className="card-body">
                 <h5 className="card-title fw-bold mb-2">{productName}</h5>
                 <p className="card-text text-black-50 text-capitalize fw-bold">

@@ -377,7 +377,7 @@ const products = [
 
     {
         id: "16",
-        productName: "SAMSUNG Galaxy S23 Ultra ",
+        productName: "SAMSUNG Galaxy S23",
         imgUrl: productImg16,
         category: "mobile",
         price: 699,
@@ -542,7 +542,7 @@ const products = [
 
     {
         id: "23",
-        productName: "OneOdio Bluetooth Over Ear Headphones",
+        productName: "OneOdio Headphones",
         imgUrl: productImg23,
         category: "wireless",
         price: 199,
