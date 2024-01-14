@@ -1,4 +1,13 @@
-.footer{
-    background-color: #111;
+.footer {
+    background-color: #091a37;
     color: #fff;
+}
+
+.footer ul li {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.footer ul li:hover {
+    color: #fff !important;
 }

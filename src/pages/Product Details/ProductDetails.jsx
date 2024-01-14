@@ -52,7 +52,11 @@ const ProductDetails = () => {
     useEffect(() => {
         const filteredData = products.filter((item) => item.category === category)
         setData(filteredData)
-    })
+    }, [category])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [product])
 
 
     return (
@@ -115,40 +119,41 @@ const ProductDetails = () => {
                                                         <h1 className="fs-5">jhon doe</h1>
                                                         <h5>{rev.rating} (rating)</h5>
                                                         <p>{rev.text}</p>
+
                                                     </div>
                                                 )
                                             })}
+                                            <div className="form d-flex flex-column">
+                                                <form action="" className=' d-flex flex-column col-10' onSubmit={handleSubmit}>
+                                                    <input ref={userRef} type="text" name="" id="" placeholder='enter name' />
+                                                    <div className="d-flex stars mt-3 mb-3">
+                                                        <span className="me-4" onClick={() => setRating(1)}>1</span>
+                                                        <span className="me-4" onClick={() => setRating(2)}>2</span>
+                                                        <span className="me-4" onClick={() => setRating(3)}>3</span>
+                                                        <span className="me-4" onClick={() => setRating(4)}>4</span>
+                                                        <span className="me-4" onClick={() => setRating(5)}>5</span>
+                                                    </div>
+                                                    <textarea ref={msgRef} name="" id="" cols="30" rows="5" placeholder='review' className='mb-4'
+                                                    >
+                                                    </textarea>
+                                                    <input type="submit" value="submit" className='w-25' />
+                                                </form>
+                                            </div>
                                         </div>
                                     )
                                 }
-                                <div className="form d-flex flex-column">
-                                    <form action="" className=' d-flex flex-column col-10' onSubmit={handleSubmit}>
-                                        <input ref={userRef} type="text" name="" id="" placeholder='enter name' />
-                                        <div className="d-flex stars mt-3 mb-3">
-                                            <span className="me-4" onClick={() => setRating(1)}>1</span>
-                                            <span className="me-4" onClick={() => setRating(2)}>2</span>
-                                            <span className="me-4" onClick={() => setRating(3)}>3</span>
-                                            <span className="me-4" onClick={() => setRating(4)}>4</span>
-                                            <span className="me-4" onClick={() => setRating(5)}>5</span>
-                                        </div>
-                                        <textarea ref={msgRef} name="" id="" cols="30" rows="5" placeholder='review' className='mb-4'
-                                        >
-                                        </textarea>
-                                        <input type="submit" value="submit" className='w-25' />
-                                    </form>
-                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="row">
-                        <div className="col-12 col-md-6 col-lg-3">
-                            {data.map((product) => {
-                                return (
+                        {data.map((product, index) => {
+                            return (
+                                <div key={index} className="col-12 col-md-6 col-lg-3">
                                     <ProductCard product={product} />
-                                )
-                            })}
-                        </div>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
             </div>

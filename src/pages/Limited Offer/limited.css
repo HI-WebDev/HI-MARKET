@@ -3,17 +3,17 @@
     color: #fff;
 }
 
-.limited .box .left .time span {
-    position: absolute;
-    content: "";
-}
 
-.limited .box .left .btn {
-    color: #111;
-    background-color: #fff !important;
+.limited .left .btn {
+    color: #091a37;
+    background-color: #fff;
     border-radius: 4px;
 }
 
-.limited .image img{
+.limited .left .btn:hover {
+    transform: scale(1.02);
+}
+
+.limited .image img {
     height: 17rem;
 }

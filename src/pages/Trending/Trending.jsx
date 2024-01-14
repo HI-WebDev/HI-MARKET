@@ -14,7 +14,7 @@ const Trending = () => {
 
 
     return (
-        <div className='trending mt-5 mb-5'>
+        <div className='trending mt-5 mb-5 pb-5 d-flex align-items-center'>
             <div className="container">
                 <h1 className='fs-2 text-center mb-5'>Trending Products</h1>
 

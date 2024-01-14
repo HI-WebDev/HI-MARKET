@@ -1,7 +1,7 @@
 
 const Service = ({ bg, icon, title, desc }) => {
     return (
-        <div className='serviceBox pt-2 pb-2 ps-2 pe-2 d-flex align-items-center justify-content-between'
+        <div className='serviceBox p-2 d-flex align-items-center justify-content-between'
             style={{ backgroundColor: bg }}>
             <span className="icon fs-4 me-2 d-flex align-items-center justify-content-center ">
                 {icon}

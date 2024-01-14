@@ -5,13 +5,40 @@ import Popular from '../Popular/Popular';
 import Services from '../Services/Services';
 import Trending from '../Trending/Trending';
 import Arrivals from '../new Arrivals/Arrivals';
+import heroimg from '../../Assets/images/HEROIMG.png'
 import './main.css';
 
 const Main = () => {
     return (
         <Helmet title="Home">
-            {/* hero section */}
 
+            {/* hero section */}
+            <div className="main d-flex align-items-center">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-6 pt-lg-4">
+                            <div className="d-flex-flex-column">
+                                <h5 className='fs-6 text-black-50 mb-2'>Trending products in 2024</h5>
+                                <h1 className='text-capitalize fw-bold mb-3'>
+                                    make your interior more minimalistic & modern
+                                </h1>
+                                <p className='text-black-50 lh-base mb-5'>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Ipsam blanditiis ipsa nihil quisquam numquam, accusantium error est aspernatur.
+                                    Ipsam blanditiis ipsa nihil quisquam numquam, accusantium error est aspernatur.
+                                </p>
+                                <div className="btn ps-4 pe-4 mt-1">SHOP NOW</div>
+                            </div>
+                        </div>
+
+                        <div className="col-6">
+                            <div className="image">
+                                <img src={heroimg} alt="heroimg" className="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             {/* services */}
             <Services />

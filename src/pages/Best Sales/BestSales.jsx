@@ -12,7 +12,7 @@ const BestSales = () => {
 
 
     return (
-        <div className='bestSales mt-5 mb-5'>
+        <div className='bestSales mt-5 mb-5 pb-4'>
             <div className="container">
                 <h1 className='fs-2 text-center mb-5'>Best Sales</h1>
 

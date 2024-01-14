@@ -4,7 +4,7 @@ import { LuPlus } from "react-icons/lu";
 import { cartActions } from "../redux Toolkit/cart Slice/CartSlice";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 
 const ProductCard = ({ product }) => {
@@ -26,13 +26,11 @@ const ProductCard = ({ product }) => {
         <div className="Prodcutcard">
             <img src={product.imgUrl} className="card-img-top mb-3" alt={product.productName} style={{ height: "12rem" }} />
             <div className="card-body">
-                <h5>
-                    <Link to={`/shop/${product.id}`} className="card-title fs-5 fw-bold mb-2">
-                        {product.productName}
-                    </Link>
-                </h5>
+                <Link to={`/shop/${product.id}`} className="card-title fs-5 fw-bold text-decoration-none lh-base">
+                    {product.productName}
+                </Link>
 
-                <p className="card-text text-black-50 text-capitalize fw-bold">
+                <p className="card-text text-black-50 text-capitalize fw-bold mt-1 mb-4">
                     {product.category}
                 </p>
                 <div className="d-flex justify-content-between">

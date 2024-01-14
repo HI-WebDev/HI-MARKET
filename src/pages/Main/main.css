@@ -1,0 +1,19 @@
+.main {
+    background-color: #d3e2fd;
+    height: calc(100vh - 64px);
+}
+.main p {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .btn {
+    background-color: #111;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.main .btn:hover {
+    background-color: #111;
+    color: #fff;
+    transform: scale(1.02);
+}

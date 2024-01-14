@@ -12,7 +12,7 @@ const Popular = () => {
     }, [])
 
     return (
-        <div className='popular mt-5 mb-5'>
+        <div className='popular mt-5 mb-5 pt-4'>
             <h1 className='fs-2 text-center text-capitalize mb-5'>popular in category</h1>
             <div className="container">
                 <div className="row mb-5">

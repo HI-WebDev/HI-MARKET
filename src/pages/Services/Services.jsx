@@ -4,12 +4,12 @@ import './services.css'
 
 const Services = () => {
     return (
-        <div className='services mt-5 mb-5'>
+        <div className='services mt-5 mb-5 pt-4 pb-4'>
             <div className="container">
                 <div className="row">
-                    {serviceData.map((box) => {
+                    {serviceData.map((box, index) => {
                         return (
-                            <div className="col-lg-3">
+                            <div key={index} className="col-lg-3">
                                 <Service
                                     bg={box.bg}
                                     icon={box.icon}
