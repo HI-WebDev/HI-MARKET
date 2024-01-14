@@ -19,17 +19,10 @@ const Trending = () => {
                 <h1 className='fs-2 text-center mb-5'>Trending Products</h1>
 
                 <div className="row">
-                    {data.map((product) => {
+                    {data.map((product, index) => {
                         return (
-                            <div key={product.id} className="col-12 col-md-6 col-lg-3">
-                                <ProductCard
-                                    imgUrl={product.imgUrl}
-                                    alt={product.productName}
-                                    height="10rem"
-                                    productName={product.productName}
-                                    category={product.category}
-                                    price={product.price}
-                                />
+                            <div key={index} className="col-12 col-md-6 col-lg-3">
+                                <ProductCard product={product} />
                             </div>
                         )
                     })}

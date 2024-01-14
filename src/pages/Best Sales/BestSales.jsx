@@ -17,17 +17,10 @@ const BestSales = () => {
                 <h1 className='fs-2 text-center mb-5'>Best Sales</h1>
 
                 <div className="row">
-                    {data.map((product) => {
+                    {data.map((product, index) => {
                         return (
-                            <div key={product.id} className="col-12 col-md-6 col-lg-3">
-                                <ProductCard
-                                    imgUrl={product.imgUrl}
-                                    alt={product.alt}
-                                    height="11rem"
-                                    productName={product.productName}
-                                    category={product.category}
-                                    price={product.price}
-                                />
+                            <div key={index} className="col-12 col-md-6 col-lg-3">
+                                <ProductCard product={product} />
                             </div>
                         )
                     })}

@@ -1,0 +1,8 @@
+.productDetails .tabs h1 {
+    cursor: pointer;
+    color: green;
+}
+
+.productDetails .tabs .active {
+    color: red;
+}

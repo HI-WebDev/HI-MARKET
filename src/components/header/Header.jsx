@@ -8,10 +8,13 @@ import './header.css';
 // import Home from './Home'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
+import { useSelector } from "react-redux";
 // import { useState } from 'react'
 
 
 const Header = () => {
+    const cart = useSelector((state) => state.cart.itemsList)
+
     const [active, setActive] = useState(false);
 
     const handleClick = () => {
@@ -52,7 +55,7 @@ const Header = () => {
                                 </Link>
                                 <Link className="cart ms-1 text-decoration-none text-black" to='/cart'>
                                     <FiShoppingCart />
-                                    <span className='ms-1'></span>
+                                    <span className='ms-1'>({cart.length})</span>
                                 </Link>
                             </div>
                         </form>

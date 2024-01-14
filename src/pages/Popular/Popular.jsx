@@ -16,17 +16,10 @@ const Popular = () => {
             <h1 className='fs-2 text-center text-capitalize mb-5'>popular in category</h1>
             <div className="container">
                 <div className="row mb-5">
-                    {watches.map((product) => {
+                    {watches.map((product, index) => {
                         return (
-                            <div key={product.id} className="col-12 col-md-6 col-lg-3">
-                                <ProductCard
-                                    imgUrl={product.imgUrl}
-                                    alt={product.productName}
-                                    height="12.5rem"
-                                    productName={product.productName}
-                                    category={product.category}
-                                    price={product.price}
-                                />
+                            <div key={index} className="col-12 col-md-6 col-lg-3">
+                                <ProductCard product={product} />
                             </div>
                         )
                     })}

@@ -28,3 +28,12 @@
     height: 30px;
     border-radius: 50%;
 }
+
+
+/* banner */
+
+.banner {
+    background-color: #db4444;
+    color: #111;
+    font-weight: 600;
+}
