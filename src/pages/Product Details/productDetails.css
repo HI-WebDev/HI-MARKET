@@ -1,8 +1,99 @@
+.productDetails .stars {
+    color: #FFD250;
+}
+
+.productDetails .avgRating h1 {
+    color: #FFD250;
+}
+
+.productDetails .desc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.productDetails .btn {
+    background-color: #091a37;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: .1s;
+}
+
+.productDetails .btn:hover {
+    background-color: #091a37;
+    color: #fff;
+    transform: scale(1.02);
+}
+
 .productDetails .tabs h1 {
     cursor: pointer;
-    color: green;
+    opacity: .6;
 }
 
 .productDetails .tabs .active {
-    color: red;
+    opacity: 1;
+}
+
+.productDetails .reviews .revRat {
+    color: #FFD250;
+}
+
+.productDetails .reviews p {
+    font-weight: 600;
+}
+
+.productDetails .form .name {
+    border-radius: 5px;
+    border: 2px solid #aaa;
+}
+
+.productDetails .form .name::-webkit-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.productDetails .form .name::-moz-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.productDetails .form .name:-ms-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.productDetails .form .name::-ms-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.productDetails .form .name::placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #aaa;
+}
+
+.productDetails .form .stars span {
+    cursor: pointer;
+}
+
+.productDetails .form .stars span svg:hover {
+    transform: scale(1.07);
+}
+
+.productDetails .form textarea{
+    border-radius: 5px;
+    border: 2px solid #aaa;
+}
+
+.productDetails .form textarea::-webkit-input-placeholder{}
+
+.productDetails .form textarea::-moz-placeholder{}
+
+.productDetails .form textarea:-ms-input-placeholder{}
+
+.productDetails .form textarea::-ms-input-placeholder{}
+
+.productDetails .form textarea::placeholder{
+    font-weight: 600;
+    text-transform: capitalize;
 }

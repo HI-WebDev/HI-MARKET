@@ -1,0 +1,17 @@
+.cart .check .btn {
+    background-color: #091a37;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.cart .image img{
+    height: 4rem;
+}
+
+.cart .delete {
+    cursor: pointer;
+}
+
+.cart .delete:hover {
+    color: red;
+}

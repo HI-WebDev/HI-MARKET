@@ -3,6 +3,7 @@ import Main from '../pages/Main/Main'
 import Shop from '../pages/shop/Shop'
 import Cart from '../pages/Cart/Cart'
 import ProductDetails from '../pages/Product Details/ProductDetails'
+import Checkout from '../pages/checkout/Checkout'
 
 const Routers = () => {
     return (
@@ -13,6 +14,7 @@ const Routers = () => {
                 <Route path='shop' Component={Shop} />
                 <Route path='shop/:id' Component={ProductDetails} />
                 <Route path='cart' Component={Cart} />
+                <Route path='checkout' Component={Checkout} />
             </Routes>
         </>
     )
