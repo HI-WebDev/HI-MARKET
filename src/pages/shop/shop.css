@@ -1,0 +1,33 @@
+.shop .categories {
+    background-color: #091a37;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.shop .sort {
+    background-color: #091a37;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+
+}
+
+.shop .form {
+    border: 2px solid #aaa;
+    border-radius: 5px;
+}
+
+
+.shop .form .search {
+    border: none;
+    font-weight: 500;
+}
+
+.shop .form .search:focus {
+    outline: 0;
+}
+
+.shop .form svg{
+    color: #aaa;
+}

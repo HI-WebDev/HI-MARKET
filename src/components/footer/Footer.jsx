@@ -14,10 +14,10 @@ const Footer = () => {
                     <div className="col-lg-5">
                         <ul className='list-unstyled'>
                             <li className=' fw-bold mb-3'>HI MARKET</li>
-                            <li className='text-white-50 font-monospace'>
+                            <p className='text-white-50 font-monospace'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciuntarchitecto
                                 voluptates doloribus alias rem dolorem labore laborum.
-                            </li>
+                            </p>
                         </ul>
                     </div>
                     <div className="col-lg-2">

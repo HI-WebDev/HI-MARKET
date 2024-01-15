@@ -7,6 +7,7 @@ import Trending from '../Trending/Trending';
 import Arrivals from '../new Arrivals/Arrivals';
 import heroimg from '../../Assets/images/HEROIMG.png'
 import './main.css';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
     return (
@@ -27,7 +28,7 @@ const Main = () => {
                                     Ipsam blanditiis ipsa nihil quisquam numquam, accusantium error est aspernatur.
                                     Ipsam blanditiis ipsa nihil quisquam numquam, accusantium error est aspernatur.
                                 </p>
-                                <div className="btn ps-4 pe-4 mt-1">SHOP NOW</div>
+                                <Link to="/shop" className="btn ps-4 pe-4 mt-1">SHOP NOW</Link>
                             </div>
                         </div>
 
