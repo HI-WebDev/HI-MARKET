@@ -14,8 +14,8 @@ const Checkout = () => {
 
             <div className='checkout mt-5 mb-5'>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-lg-8 mb-5 mb-lg-0">
+                    <div className="row d-flex justify-content-center justify-content-lg-between">
+                        <div className="col-12 col-md-9 col-lg-7 mb-5 mb-lg-0">
                             <div className="d-flex flex-column">
                                 <h1 className="fs-5 text-capitalize mb-3">billing address</h1>
                                 <Input type="text" ph="enter your name" m="0 0 15px" />
@@ -28,7 +28,7 @@ const Checkout = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-4">
+                        <div className="col-12 col-md-9 col-lg-4">
                             <div className="checkForm d-flex flex-column p-3">
                                 <div className="d-flex justify-content-between align-items-center mb-2">
                                     <h1 className="fs-6 text-capitalize">total quantity:</h1>

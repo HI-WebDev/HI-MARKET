@@ -14,7 +14,7 @@ const BestSales = () => {
     return (
         <div className='bestSales mt-5 mb-5 pb-2 pb-md-4 pb-lg-5'>
             <div className="container">
-                <h1 className='fs-2 text-center mb-5'>Best Sales</h1>
+                <h1 className='mainTitle fs-1 text-center mb-5'>Best Sales</h1>
 
                 <div className="row">
                     {data.map((product, index) => {

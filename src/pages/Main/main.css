@@ -20,7 +20,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .main {
         background-color: #d3e2fd;
         height: auto;

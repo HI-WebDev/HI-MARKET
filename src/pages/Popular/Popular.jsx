@@ -13,7 +13,7 @@ const Popular = () => {
 
     return (
         <div className='popular mt-5 mb-5 pt-0 pt-md-2 pt-lg-4'>
-            <h1 className='fs-2 text-center text-capitalize mb-5'>popular in category</h1>
+            <h1 className='mainTitle fs-1 text-center text-capitalize mb-5'>popular in category</h1>
             <div className="container">
                 <div className="row mb-5">
                     {watches.map((product, index) => {

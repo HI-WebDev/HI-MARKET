@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='footer pt-4 pb-4 pt-lg-5 pb-lg-5'>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5">
+                    <div className="col-12 col-md-12 col-lg-5 text-start text-md-center text-lg-start mb-0 mb-md-4 mb-lg-0">
                         <ul className='list-unstyled'>
                             <li className=' fw-bold mb-3'>HI MARKET</li>
                             <p className='text-white-50 font-monospace'>
@@ -20,7 +20,7 @@ const Footer = () => {
                             </p>
                         </ul>
                     </div>
-                    <div className="col-lg-2">
+                    <div className="col-12 col-md-4 col-lg-2 d-flex justify-content-start justify-content-md-center justify-content-lg-start">
                         <ul className='list-unstyled'>
                             <li className='fw-bold mb-3 text-capitalize'>useful links</li>
                             <li className='text-white-50 font-monospace text-capitalize mb-2'>
@@ -37,7 +37,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-2">
+                    <div className="col-12 col-md-4 col-lg-2 d-flex justify-content-start justify-content-md-center justify-content-lg-start">
                         <ul className='list-unstyled'>
                             <li className=' fw-bold mb-3 text-capitalize'>top categories</li>
                             <li className='text-white-50 font-monospace text-capitalize mb-2'>
@@ -54,7 +54,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-12 col-md-4 col-lg-3 d-flex justify-content-start justify-content-md-center justify-content-lg-start">
                         <ul className='list-unstyled'>
                             <li className=' fw-bold mb-3 text-capitalize'>contact</li>
                             <li className='text-white-50 text-capitalize d-flex align-items-center mb-2'>

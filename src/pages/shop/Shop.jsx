@@ -60,15 +60,15 @@ const Shop = () => {
                                 <option value="watch">watch</option>
                             </select>
                         </div>
-                        <div className="col-12 col-lg-9 d-flex  justify-content-end align-items-center">
-                            <div className="col-lg-2 me-lg-4">
-                                <select className="sort ps-2 ps-md-3 p-2 w-100" name="" id="">
+                        <div className="col-12 col-lg-9 d-flex justify-content-between justify-content-lg-end align-items-center">
+                            <div className="col-3 col-lg-2 me-lg-4">
+                                <select className="sort ps-1 ps-md-3 p-2 w-100" name="" id="">
                                     <option value="1">Sort By</option>
                                     <option value="1">Chairs</option>
                                     <option value="1">Watches</option>
                                 </select>
                             </div>
-                            <div className="col-lg-7 ms-2">
+                            <div className="col-8 col-lg-7">
                                 <div className='form d-flex align-items-center w-100 '>
                                     <input type="text" className="search w-100 p-2 ps-3" name="search" id="" placeholder="Search"
                                         onChange={handleSearch} value={searchValue} />

@@ -22,15 +22,15 @@ const Cart = () => {
                         )
                         :
                         (
-                            <div className="row">
-                                <div className="col-12 col-lg-8 mb-5 mb-lg-0">
+                            <div className="row d-flex justify-content-md-end justify-content-lg-start">
+                                <div className="col-12 col-md-12 col-lg-8 mb-5 mb-lg-0">
                                     <table className="table">
                                         <thead>
                                             <tr>
                                                 <th className='col- col-lg-1' scope="col">Image</th>
                                                 <th className='col- col-lg-4' scope="col">Title</th>
                                                 <th className='col- col-lg-1' scope="col">Price</th>
-                                                <th className='col- col-lg-1' scope="col">Qty</th>
+                                                <th className='col- col-lg-1' scope="col">Quantity</th>
                                                 <th className='col- col-lg-1' scope="col">Delete</th>
                                             </tr>
                                         </thead>
@@ -44,7 +44,7 @@ const Cart = () => {
                                     </table>
                                 </div>
 
-                                <div className="col-12 col-lg-4">
+                                <div className="col-12 col-md-7 col-lg-4">
                                     <div className="check d-flex flex-column">
                                         <div className="d-flex mb-1 justify-content-between align-items-center">
                                             <h1 className="fs-5 text-capitalize">subtotal</h1>

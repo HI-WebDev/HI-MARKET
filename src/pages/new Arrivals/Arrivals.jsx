@@ -16,7 +16,7 @@ const Arrivals = () => {
 
     return (
         <div className='arrivals mt-5 mb-5 pt-4 pb-2 pb-md-4 pb-lg-5'>
-            <h1 className='fs-2 text-center text-capitalize mb-5'>new arrivals</h1>
+            <h1 className='mainTitle fs-1 text-center text-capitalize mb-5'>new arrivals</h1>
             <div className="container">
                 <div className="row mb-5">
                     {phones.map((product, index) => {

@@ -16,7 +16,7 @@ const Trending = () => {
     return (
         <div className='trending mt-5 mb-5 pb-0 pb-md-4 pb-lg-5 d-flex align-items-center'>
             <div className="container">
-                <h1 className='fs-2 text-center mb-5'>Trending Products</h1>
+                <h1 className='mainTitle fs-1 text-center mb-5'>Trending Products</h1>
 
                 <div className="row">
                     {data.map((product, index) => {
