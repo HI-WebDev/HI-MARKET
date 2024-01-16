@@ -14,10 +14,10 @@ const Main = () => {
         <Helmet title="Home">
 
             {/* hero section */}
-            <div className="main d-flex align-items-center">
+            <div className="main d-flex align-items-center pt-5 pb-5 p-lg-0">
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 pt-lg-4">
+                        <div className="col-12 col-lg-6 pt-lg-4 mb-4 mb-lg-0">
                             <div className="d-flex-flex-column">
                                 <h5 className='fs-6 text-black-50 mb-2'>Trending products in 2024</h5>
                                 <h1 className='text-capitalize fw-bold mb-3'>
@@ -32,7 +32,7 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div className="col-6">
+                        <div className="col-12 col-lg-6">
                             <div className="image">
                                 <img src={heroimg} alt="heroimg" className="img-fluid" />
                             </div>

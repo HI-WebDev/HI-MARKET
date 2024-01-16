@@ -37,10 +37,11 @@ const Limited = () => {
             <div className="container">
                 <div className="row d-flex justify-content-between align-items-center">
                     <div className="col-12 col-md-6 col-lg-6">
-                        <div className="left d-flex flex-column">
-                            <h1 className="fs-6 text-capitalize mb-1 text-white-50">limited offers</h1>
+                        <div className="left d-flex flex-column text-center text-lg-start mt-4 mt-lg-0 mb-4 mb-lg-0">
+                            <h1 className="fs-6 text-capitalize mb-2 text-white-50">limited offers</h1>
                             <h1 className="fs-5 text-capitalize mb-4">quantity single chairs</h1>
-                            <div className="counter d-flex align-items-center mb-4">
+
+                            <div className="counter d-flex align-items-center justify-content-center justify-content-lg-start mb-4">
                                 <div className='time me-3 fw-bold d-flex text-center align-items-center'>
                                     <div className="d-flex flex-column me-3">
                                         <h5 className="fs-3 mb-1">{time.days}</h5>
@@ -72,11 +73,13 @@ const Limited = () => {
                                     </div>
                                 </div>
                             </div>
-                            <Link to="/shop" className="btn fw-bold text-capitalize w-25">visit store</Link>
+                            <div className='mt-2 mt-lg-0'>
+                            <Link to="/shop" className="btn fw-bold text-capitalize ps-4 pe-4">visit store</Link>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="col-12 col-md-6 col-lg-6 d-flex justify-content-end">
+                    <div className="col-12 col-md-6 col-lg-6 d-none d-lg-flex justify-content-end d-">
                         <div className="image">
                             <img src={img} alt="" className="img-fluid" />
                         </div>

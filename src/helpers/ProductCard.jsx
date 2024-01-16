@@ -33,7 +33,7 @@ const ProductCard = ({ product }) => {
                 <p className="card-text text-black-50 text-capitalize fw-bold mt-1 mb-4">
                     {product.category}
                 </p>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between align-items-center">
                     <span className="price fw-bold">${product.price}</span>
                     <span className="add d-flex justify-content-center align-items-center fw-bold fs-5"
                         onClick={addToCart}>

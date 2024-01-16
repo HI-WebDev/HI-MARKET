@@ -1,6 +1,7 @@
 .shop .categories {
     background-color: #091a37;
     color: #fff;
+    border: 2px solid #091a37;
     border-radius: 5px;
     font-weight: 500;
 }
@@ -8,6 +9,7 @@
 .shop .sort {
     background-color: #091a37;
     color: #fff;
+    border: 2px solid #091a37;
     border-radius: 5px;
     font-weight: 500;
 

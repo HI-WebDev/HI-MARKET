@@ -1,4 +1,13 @@
 .navbar {
-    /* background-color: #d6e5fb; */
+    background-color: #fff;
     box-shadow: 0 1px 7px 0 rgb(0, 0, 0, 50%);
+}
+
+.navbar .navbar-toggler{
+    border: none;
+}
+
+.navbar .navbar-toggler:focus{
+    outline: 0;
+    box-shadow: none;
 }

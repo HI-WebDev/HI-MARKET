@@ -50,7 +50,6 @@ const ProductDetails = () => {
         return (
             userRef.current.value = ""
         )
-        // console.log(objRev);
     }
 
     const [data, setData] = useState(products)
@@ -72,12 +71,12 @@ const ProductDetails = () => {
             <div className="productDetails mt-5 mb-5">
                 <div className="container">
                     <div className="row mb-5 d-flex align-items-center justify-content-between">
-                        <div className="col-lg-5 pt-lg-3">
+                        <div className="col-12 col-lg-5 pt-3">
                             <div className="image d-flex justify-content-center">
                                 <img src={imgUrl} alt={productName} className='img-fluid' />
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-12 col-lg-6">
                             <div className="d-flex-flex-column">
                                 <h1 className='fs-4 mb-2'>{productName}</h1>
                                 <div className="d-flex align-items-center mt-0 mb-3">
@@ -143,10 +142,10 @@ const ProductDetails = () => {
                                                     </div>
                                                 )
                                             })}
-                                            <div className="ms-5 pt-3 form d-flex flex-column">
-                                                <h1 className='fs-5 fw-bold mb-4'>Leave your experience review</h1>
+                                            <div className="ms-3 ms-md-5 pt-3 form d-flex flex-column">
+                                                <h1 className='fs-6 fs-lg-5 fw-bold mb-4'>Leave your experience review</h1>
                                                 <form action="" className='d-flex flex-column col-10' onSubmit={handleSubmit}>
-                                                    <input ref={userRef} className='p-2 ps-3 name' type="text" name="" id="" placeholder='enter name' required />
+                                                    <input ref={userRef} className='nameInput p-2 ps-3' type="text" name="" id="" placeholder='enter name' required />
                                                     <div className="d-flex stars mt-4 mb-4">
                                                         <span className="me-4 d-flex align-items-center" onClick={() => setRating(1)}>
                                                             1 <FaStar className='ms-1' />
@@ -167,7 +166,9 @@ const ProductDetails = () => {
                                                     <textarea ref={msgRef} name="" id="" cols="30" rows="4" placeholder='review message...' className='mb-5 p-2 ps-3'
                                                     >
                                                     </textarea>
-                                                    <input type="submit" value="submit" className='btn text-capitalize w-25' />
+                                                    <div>
+                                                        <input type="submit" value="submit" className='btn text-capitalize ps-4 pe-4' />
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
@@ -178,10 +179,10 @@ const ProductDetails = () => {
                     </div>
 
                     <div className={tab === "desc" ? "row" : "row pt-5"}>
-                        <h1 className="fs-5 mb-4 fw-bold">You might also like</h1>
+                        <h1 className="fs-5 mb-5 mb-lg-4 fw-bold">You might also like</h1>
                         {data.map((product, index) => {
                             return (
-                                <div key={index} className="col-12 col-md-6 col-lg-3">
+                                <div key={index} className="col-12 col-md-6 col-lg-3 mb-5 mb-md-4 mb-lg-0">
                                     <ProductCard product={product} />
                                 </div>
                             )

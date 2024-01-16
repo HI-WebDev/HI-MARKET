@@ -1,4 +1,4 @@
-.productDetails .image img{
+.productDetails .image img {
     height: 20rem;
     width: auto;
 }
@@ -38,6 +38,42 @@
 .productDetails .tabs .active {
     opacity: 1;
 }
+
+.productDetails .nameInput {
+    border-radius: 5px;
+    border: 2px solid #aaa;
+}
+
+.productDetails .nameInput::-webkit-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #aaa;
+}
+
+.productDetails .nameInput::-moz-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #aaa;
+}
+
+.productDetails .nameInput:-ms-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #aaa;
+}
+
+.productDetails .nameInput::-ms-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #aaa;
+}
+
+.productDetails .nameInput::placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #aaa;
+}
+
 
 .productDetails .reviews .revRat {
     color: #FFD250;

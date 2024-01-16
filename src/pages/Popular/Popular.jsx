@@ -12,13 +12,13 @@ const Popular = () => {
     }, [])
 
     return (
-        <div className='popular mt-5 mb-5 pt-4'>
+        <div className='popular mt-5 mb-5 pt-0 pt-md-2 pt-lg-4'>
             <h1 className='fs-2 text-center text-capitalize mb-5'>popular in category</h1>
             <div className="container">
                 <div className="row mb-5">
                     {watches.map((product, index) => {
                         return (
-                            <div key={index} className="col-12 col-md-6 col-lg-3">
+                            <div key={index} className="col-12 col-md-6 col-lg-3 mb-5 mb-md-4 mb-lg-0">
                                 <ProductCard product={product} />
                             </div>
                         )
