@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 
 
 const Header = () => {
-    const cart = useSelector((state) => state.cart.itemsList)
+    const totalQuantity = useSelector((state) => state.cart.totalQuantity)
 
     const [active, setActive] = useState(false);
 
@@ -43,16 +43,16 @@ const Header = () => {
                             </li>
 
                         </ul>
-                            <div className="buttons d-flex align-items-center">
-                                <Link className="like fs-6 me-2 text-decoration-none text-black" to="/wishlist">
-                                    <FiHeart />
-                                    <span className='ms-1'>(1)</span>
-                                </Link>
-                                <Link className="cart ms- text-decoration-none text-black" to='/cart'>
-                                    <FiShoppingCart />
-                                    <span className='ms-1'>({cart.length})</span>
-                                </Link>
-                            </div>
+                        <div className="buttons d-flex align-items-center">
+                            <Link className="like fs-6 me-2 text-decoration-none text-black" to="/wishlist">
+                                <FiHeart />
+                                <span className='ms-1'>(1)</span>
+                            </Link>
+                            <Link className="cart ms- text-decoration-none text-black" to='/cart'>
+                                <FiShoppingCart />
+                                <span className='ms-1'>({totalQuantity})</span>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </nav>

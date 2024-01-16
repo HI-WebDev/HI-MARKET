@@ -1,3 +1,9 @@
+.productDetails .image img{
+    height: 20rem;
+    width: auto;
+}
+
+
 .productDetails .stars {
     color: #FFD250;
 }
@@ -41,36 +47,6 @@
     font-weight: 600;
 }
 
-.productDetails .form .name {
-    border-radius: 5px;
-    border: 2px solid #aaa;
-}
-
-.productDetails .form .name::-webkit-input-placeholder {
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.productDetails .form .name::-moz-placeholder {
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.productDetails .form .name:-ms-input-placeholder {
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.productDetails .form .name::-ms-input-placeholder {
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.productDetails .form .name::placeholder {
-    font-weight: 600;
-    text-transform: capitalize;
-    color: #aaa;
-}
 
 .productDetails .form .stars span {
     cursor: pointer;
@@ -80,20 +56,32 @@
     transform: scale(1.07);
 }
 
-.productDetails .form textarea{
+.productDetails .form textarea {
     border-radius: 5px;
     border: 2px solid #aaa;
 }
 
-.productDetails .form textarea::-webkit-input-placeholder{}
+.productDetails .form textarea::-webkit-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
-.productDetails .form textarea::-moz-placeholder{}
+.productDetails .form textarea::-moz-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
-.productDetails .form textarea:-ms-input-placeholder{}
+.productDetails .form textarea:-ms-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
-.productDetails .form textarea::-ms-input-placeholder{}
+.productDetails .form textarea::-ms-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
-.productDetails .form textarea::placeholder{
+.productDetails .form textarea::placeholder {
     font-weight: 600;
     text-transform: capitalize;
 }

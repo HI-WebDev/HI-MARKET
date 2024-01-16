@@ -32,8 +32,10 @@ const Shop = () => {
 
     useEffect(() => {
         const searchProducts = products.filter(
-            (product) => product.productName.includes(searchValue))
-        // (product) => product.productName.toLowerCase().includes(searchValue.toLowerCase()))
+            (product) => product.productName.toLocaleLowerCase().includes(searchValue)
+        )
+
+        console.log(searchProducts)
         setData(searchProducts)
     }, [searchValue])
 

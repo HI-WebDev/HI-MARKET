@@ -1,0 +1,9 @@
+.checkout .checkForm{
+    background-color:#091a37;
+    color: #fff;
+    border-radius: 5px;
+}
+.checkout .checkForm .btn{
+    background-color: #fff;
+    color: #091a37;
+}

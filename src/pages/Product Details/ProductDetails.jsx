@@ -46,7 +46,11 @@ const ProductDetails = () => {
             text: userMessage,
             rating,
         }
-        console.log(objRev);
+        console.log(objRev)
+        return (
+            userRef.current.value = ""
+        )
+        // console.log(objRev);
     }
 
     const [data, setData] = useState(products)
@@ -69,7 +73,7 @@ const ProductDetails = () => {
                 <div className="container">
                     <div className="row mb-5 d-flex align-items-center justify-content-between">
                         <div className="col-lg-5 pt-lg-3">
-                            <div className="image">
+                            <div className="image d-flex justify-content-center">
                                 <img src={imgUrl} alt={productName} className='img-fluid' />
                             </div>
                         </div>
@@ -142,7 +146,7 @@ const ProductDetails = () => {
                                             <div className="ms-5 pt-3 form d-flex flex-column">
                                                 <h1 className='fs-5 fw-bold mb-4'>Leave your experience review</h1>
                                                 <form action="" className='d-flex flex-column col-10' onSubmit={handleSubmit}>
-                                                    <input ref={userRef} className='p-2 ps-3 name' type="text" name="" id="" placeholder='enter name' />
+                                                    <input ref={userRef} className='p-2 ps-3 name' type="text" name="" id="" placeholder='enter name' required />
                                                     <div className="d-flex stars mt-4 mb-4">
                                                         <span className="me-4 d-flex align-items-center" onClick={() => setRating(1)}>
                                                             1 <FaStar className='ms-1' />
